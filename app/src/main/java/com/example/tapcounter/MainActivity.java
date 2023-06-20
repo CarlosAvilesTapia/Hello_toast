@@ -29,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        count_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Integer count_number = Integer.parseInt(counter.getText().toString());
+               count_number++;
+               counter.setText(String.valueOf(count_number));
+            }
+        });
     }
 }
